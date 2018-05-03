@@ -117,14 +117,18 @@ if  exist('imask') & ~isempty(imask),
 	end
 end
 
-imf = max(1,gcf-1); snrf = imf+1;
+current_gcf = gcf;
+
+imf = max(1,current_gcf.Number - 1); snrf = imf+1;
 figure(imf);  clf
 subplot(1,2,1); grayRange = showIm(im,'auto',1); title('Starting image');
 drawnow
 
 prev_im=im;
 
-imf = max(1,gcf-1);
+current_gcf = gcf;
+
+imf = max(1, current_gcf.Number - 1);
 figure(imf);   
 clf;showIm(im,'auto',1); title(sprintf('iteration 0'));
 
