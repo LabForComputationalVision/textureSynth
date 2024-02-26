@@ -57,20 +57,20 @@ Comments/Suggestions/Bugs to:
 J Portilla and E P Simoncelli. A Parametric Texture Model based on Joint
 Statistics of Complex Wavelet Coefficients. Int'l Journal of Computer
 Vision. 40(1):49-71, October, 2000.
-http://www.cns.nyu.edu/\~eero/ABSTRACTS/portilla99-abstract.html
+http://www.cns.nyu.edu/~eero/ABSTRACTS/portilla99-abstract.html
 
 J Portilla and E P Simoncelli Texture Modeling and Synthesis using Joint
 Statistics of Complex Wavelet Coefficients. IEEE Workshop on Statistical
-and Computational Theories of Vision, Fort Collins, CO, 22 June 1999.\
-http://www.cns.nyu.edu/\~eero/ABSTRACTS/portilla99a-abstract.html
+and Computational Theories of Vision, Fort Collins, CO, 22 June 1999.
+http://www.cns.nyu.edu/~eero/ABSTRACTS/portilla99a-abstract.html
 
 J Portilla and E P Simoncelli. Texture Representation and Synthesis
 Using Correlation of Complex Wavelet Coefficient Magnitudes. Technical
 Report #54, Consejo Superior de Investigaciones Cientificas (CSIC),
-Madrid. 29 March 1999.\
-http://www.cns.nyu.edu/\~eero/ABSTRACTS/portilla98-abstract.html
+Madrid. 29 March 1999.
+http://www.cns.nyu.edu/~eero/ABSTRACTS/portilla98-abstract.html
 
 E P Simoncelli and J Portilla. Texture Characterization via Joint
 Statistics of Wavelet Coefficient Magnitudes. In 5th IEEE Int'l Conf on
-Image Processing. Chicago, IL. Oct 4-7, 1998.\
-http://www.cns.nyu.edu/\~eero/ABSTRACTS/simoncelli98b-abstract.html
+Image Processing. Chicago, IL. Oct 4-7, 1998.
+http://www.cns.nyu.edu/~eero/ABSTRACTS/simoncelli98b-abstract.html
