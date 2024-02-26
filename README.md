@@ -12,8 +12,8 @@ Incremental changes to the code are documented in the `ChangeLog` file.
 Written by Javier Portilla and Eero Simoncelli, 1999-2000.
 
 Comments/Suggestions/Bugs to:
-- javier\@decsai.ugr.es 
-- eero.simoncelli\@nyu.edu
+- `javier@decsai.ugr.es` 
+- `eero.simoncelli@nyu.edu`
 
 ## INSTALLATION
 
