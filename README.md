@@ -15,6 +15,19 @@ Comments/Suggestions/Bugs to:
 - `javier@decsai.ugr.es` 
 - `eero.simoncelli@nyu.edu`
 
+> [!TIP] 
+>
+> An actively-maintained GPU-compatible python port of this model (using
+> pytorch) can be found in the
+> [plenoptic](https://github.com/LabForComputationalVision/plenoptic) package.
+> Note that the `plenoptic` port is not exactly identical: it makes use of
+> pytorch's built-in optimization, rather than the custom optimization found
+> here, and it returns only the statistics described in the paper (this
+> implementation includes some redundant statistics, see
+> [docs](https://plenoptic.readthedocs.io/en/latest/tutorials/models/Metamer-Portilla-Simoncelli.html)
+> for more details). The results of texture synthesis are still qualitatively
+> similar.
+
 ## INSTALLATION
 
 1)  download and unpack the code. You can put the code anywhere on your
