@@ -23,8 +23,8 @@ Comments/Suggestions/Bugs to:
 > Note that the `plenoptic` port is not exactly identical: it makes use of
 > pytorch's built-in optimization, rather than the custom optimization found
 > here, and it returns only the statistics described in the paper (this
-> implementation includes some redundant statistics, see
-> [docs](https://plenoptic.readthedocs.io/en/latest/tutorials/models/Metamer-Portilla-Simoncelli.html)
+> implementation includes some redundant statistics, see [plenoptic
+> docs](https://plenoptic.readthedocs.io/en/latest/tutorials/models/Metamer-Portilla-Simoncelli.html)
 > for more details). The results of texture synthesis are still qualitatively
 > similar.
 
