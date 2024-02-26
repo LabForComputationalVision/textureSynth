@@ -20,12 +20,12 @@ Comments/Suggestions/Bugs to:
 1)  download and unpack the code. You can put the code anywhere on your
     system, but we'll assume it's in a directory named `textureSynth`.
 
-2)  download and unpack the matlabPyrTools package from
-    https://github.com/LabForComputationalVision/matlabPyrTools This is
-    a collection of tools for multi-scale decomposition of images. You
-    can put the code anywhere on your system, but we'll assume it's in a
-    directory named `matlabPyrTools`. Please use version 1.4 or newer of
-    the matlabPyrTools.
+2)  download and unpack the [matlabPyrTools
+    package](https://github.com/LabForComputationalVision/matlabPyrTools) This
+    is a collection of tools for multi-scale decomposition of images. You can
+    put the code anywhere on your system, but we'll assume it's in a directory
+    named `matlabPyrTools`. Please use version 1.4 or newer of the
+    matlabPyrTools.
 
 3)  Run matlab, and put the matlabPyrTools directory in your path: >
     path('matlabPyrTools', path);
