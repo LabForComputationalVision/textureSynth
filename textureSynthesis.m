@@ -41,6 +41,7 @@ function [im,snrP,imS] = textureSynthesis(params, im0, Niter, cmask, imask)
 % All rights reserved.
 
 Warn = 0;  % Set to 1 if you want to see warning messages
+DoFigUpdates = 0;   % set to 0 if you don't want all the figure updates.
 
 %% Check required args are passed:
 if (nargin < 2)
@@ -117,17 +118,36 @@ if  exist('imask') & ~isempty(imask),
 	end
 end
 
-imf = max(1,gcf-1); snrf = imf+1;
-figure(imf);  clf
-subplot(1,2,1); grayRange = showIm(im,'auto',1); title('Starting image');
-drawnow
+
+% Prior to 2014b (version 8.4), graphic handles were numeric, and one could
+% do math with them. In 2014b the matlab graphics system changed
+% significantly, and amongst other things, graphic handles (e.g. what is
+% returned from gcf() or figure()) are objects, and the old math tricks
+% don't work any more. In more recent versions, it seems that matlab has
+% preserved a 'Number' property for figures, and it seems to work similarly
+% to the old numeric handles. I preserved the handle 'math logic' here,
+% simply doing it differently for later versions of matlab. 
+
+if DoFigUpdates
+    if verLessThan('matlab','8.4')
+        % -- Code to run in MATLAB R2014a and earlier here --
+        imf = max(1,gcf-1); snrf = imf+1;
+        figure(imf);  clf
+        subplot(1,2,1); grayRange = showIm(im,'auto',1); title('Starting image');
+        drawnow
+            
+        imf = max(1,gcf-1);
+        figure(imf);   
+        clf;showIm(im,'auto',1); title(sprintf('iteration 0'));
+    else
+        % -- Code to run in MATLAB R2014b and later here --
+        imf = figure;
+        % the figure drawn here in original version is overwritten in the first
+        % loop below, so I leave it empty for now.
+    end
+end
 
 prev_im=im;
-
-imf = max(1,gcf-1);
-figure(imf);   
-clf;showIm(im,'auto',1); title(sprintf('iteration 0'));
-
 nq = 0;
 Nq = floor(log2(Niter));
 imS = zeros(Ny,Nx,Nq);
@@ -387,13 +407,15 @@ end	% cmask(1)
   tmp = prev_im;
   prev_im=im;	
 
-  figure(imf);
-  subplot(1,2,1);
-  showIm(im-tmp,'auto',1); title('Change');
-  subplot(1,2,2);
-  showIm(im,'auto',1); title(sprintf('iteration %d/%d',niter,Niter));
-  drawnow
-  
+  if DoFigUpdates
+      figure(imf);
+      subplot(1,2,1);
+      showIm(im-tmp,'auto',1); title('Change');
+      subplot(1,2,2);
+      showIm(im,'auto',1); title(sprintf('iteration %d/%d',niter,Niter));
+      drawnow
+  end
+
   % accelerator
   alpha = 0.8;
   im = im + alpha*(im - tmp);
@@ -430,6 +452,11 @@ end
 end  % if ~commented
 
 end %END  MAIN LOOP
+
+%djs clean up
+if DoFigUpdates
+    close(imf);
+end
 
 im = prev_im;
 
