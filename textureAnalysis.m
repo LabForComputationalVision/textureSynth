@@ -28,6 +28,7 @@ function [params] = textureAnalysis(im0, Nsc, Nor, Na)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Warn = 0;  % Set to 1 if you want to see warning messages
+DoFigUpdates = 0;   % Set to 0 so no figures are created
 
 %% Check required args are passed
 if (nargin < 4)
@@ -84,9 +85,11 @@ pyr0(pyrBandIndices(pind0,nband)) = ...
 rpyr0 = real(pyr0);
 apyr0 = abs(pyr0);
 
-figure(gcf)
-clf
-showIm(im0,'auto',1); title('Original');  drawnow
+if DoFigUpdates
+    figure(gcf)
+    clf
+    showIm(im0,'auto',1); title('Original');  drawnow
+end
 
 %% Subtract mean of magnitude:
 magMeans0 = zeros(size(pind0,1), 1);
