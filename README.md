@@ -28,6 +28,13 @@ Comments/Suggestions/Bugs to:
 > for more details). The results of texture synthesis are still qualitatively
 > similar.
 
+> [!WARNING]
+>
+>  In https://github.com/LabForComputationalVision/textureSynth/pull/5, a small
+>  change was made to the plotting code for compatibility with recent versions
+>  of matlab. The code now works with Matlab >= 2023. Back-compatibility is
+>  unclear.
+
 ## INSTALLATION
 
 1)  download and unpack the code. You can put the code anywhere on your
