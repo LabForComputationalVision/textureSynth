@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% COPYRIGHT NOTE:
+% ==============
+%
+% This software, in its present version, cannot:
+% 1) be re-distributed, totally or partially, after modification
+% 2) be used for other than academic/research or personal purposes
+% 3) be used for generating published material without acknowledging
+%     its source, and the publication: 
+%
+%  A parametric texture model based on  joint statistics of complex wavelet coefficients.
+%  J Portilla and E P Simoncelli 
+%  International Journal of Computer Vision, vol. 40, num. 1, pp. 49-71, 2000.
+%
+% Please send an email report of any bugs to: portilla@io.cfmac.csic.es
+%
+% J. Portilla and E. P. Simoncelli
+% portilla@io.cfmac.csic.es, eero.simoncelli@nyu.edu
+%
+% October 2000, New York University, New York
+% Released Version 1.0: January 2009, CSIC, Madrid.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
